@@ -9,7 +9,7 @@ class Gift extends React.Component{
   }
   render(){
     return(
-      <div>
+      <div className='gift'>
         <Form>
           <FormGroup>
             <ControlLabel>Person</ControlLabel>
