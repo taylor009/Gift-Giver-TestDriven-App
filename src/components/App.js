@@ -24,6 +24,15 @@ class App extends React.Component{
     return(
       <div>
         <h2>Gift Giver</h2>
+        <div className='gift-list'>
+          {
+            this.state.gifts.map(gift => {
+              return(
+                <div key={gift.id}></div>
+              )
+            })
+          }
+        </div>
         <Button onClick={this.addGift} className='btn-add'>Add Gift</Button>
       </div>
     )
